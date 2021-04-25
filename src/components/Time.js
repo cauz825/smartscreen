@@ -3,7 +3,7 @@ const moment = require('moment')
 
 function Time() {
 
-    const today = moment();
+    let today = moment();
     const [currentDate, setCurrentDate] = useState('')
     const [currentTime, setCurrentTime] = useState('')
     const [countdown, setCountdown] = useState('')
@@ -13,7 +13,7 @@ function Time() {
     }
 
     function displayTime() {
-        setCurrentTime(today.format("h:mmA"))
+        setCurrentTime(today.format("h:mm:ssA"))
     }
 
     function daysLeft() {
@@ -22,9 +22,9 @@ function Time() {
     }
 
     useEffect(() => {
-       displayDate()
-       displayTime()
-       daysLeft()
+        displayDate()
+        displayTime()
+        daysLeft()
     })
 
     return(
