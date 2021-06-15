@@ -3,7 +3,7 @@ import React from 'react'
 function Weather() {
     return(
         <div>
-            Weather Component
+            Weather
         </div>
     )
 }

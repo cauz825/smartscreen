@@ -4,9 +4,7 @@ import ApiCalendar from 'react-google-calendar-api';
 function Calendar() {
     return(
         <div>
-            Calendar Component
-
-            Import Gmail Calendar
+            Calendar
         </div>
     )
 }
